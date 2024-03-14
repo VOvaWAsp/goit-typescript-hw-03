@@ -35,7 +35,7 @@ abstract class House {
 
 class MyHouse extends House {
   openDoor(key) {
-    if (key === Math.random()) {
+    if (key === key.getSignature()) {
       this.door = true;
     } else {
       this.door = false;
